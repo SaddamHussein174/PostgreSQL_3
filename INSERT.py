@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-engine = sqlalchemy.create_engine("postgresql://postgres:pass5@localhost:5432/postgres", encoding='UTF=8')
+engine = sqlalchemy.create_engine("postgresql://postgres:*******@localhost:5432/postgres", encoding='UTF=8', echo=True)
 
 connection = engine.connect()
 
