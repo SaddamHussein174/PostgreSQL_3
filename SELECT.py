@@ -1,5 +1,20 @@
 import sqlalchemy
-from INSERT import connection
+import binary as binary
+from sqlalchemy import create_engine, Column, Integer, String, Sequence
+from sqlalchemy.dialects.postgresql import psycopg2
+from sqlalchemy.ext.declarative import declarative_base
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+
+engine = create_engine("postgresql+psycopg2://root:pass@localhost/mydb", encoding='UTF=8')
+
+connection = create_engine("postgresql+psycopg2://postgres:*******@localhost/postgres")
+engine.connect()
+
+connection_2 = psycopg2.connect(user="postgres", password="*******")
+connection_2.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+
+
 
 # название и год выхода альбомов, вышедших в 2018 году;
 
