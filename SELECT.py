@@ -6,10 +6,9 @@ from sqlalchemy.ext.declarative import declarative_base
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-engine = create_engine("postgresql+psycopg2://root:pass@localhost/mydb", encoding='UTF=8')
+engine = create_engine("postgresql://postgrest:pass@localhost/postgres", encoding='UTF=8')
 
-connection = create_engine("postgresql+psycopg2://postgres:*******@localhost/postgres")
-engine.connect()
+connection = engine.connect()
 
 connection_2 = psycopg2.connect(user="postgres", password="*******")
 connection_2.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
