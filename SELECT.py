@@ -1,17 +1,12 @@
 import sqlalchemy
-import binary as binary
 from sqlalchemy import create_engine, Column, Integer, String, Sequence
 from sqlalchemy.dialects.postgresql import psycopg2
-from sqlalchemy.ext.declarative import declarative_base
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-engine = create_engine("postgresql://postgrest:*******@localhost/postgres", encoding='UTF=8', echo=True)
+engine = sqlalchemy.create_engine("postgresql+psycopg2://postgres:*****5@localhost/postgres", encoding='UTF=8')
 
 connection = engine.connect()
-
-connection_2 = psycopg2.connect(user="postgres", password="*******")
-connection_2.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
 
 
