@@ -62,7 +62,7 @@ connection.execute("""INSERT INTO Треки(id_track, Название_трек
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(8,'Toxic','00:03:21',5);""")
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(9,'Oops!…I Did It Again','00:03:55',5);""")
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(10,'Roar','00:04:48',6);""")
-connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(11,'Dark Horse','00:03:18',6);""")
+connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(11,'My Dark Horse','00:03:18',6);""")
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(12,'The Sign','00:03:02',7);""")
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(13,'Lucky Love','00:04:11',7);""")
 connection.execute("""INSERT INTO Треки(id_track, Название_трека, Длительность, id_album) VALUES(14,'Hurt','00:04:27',8);""")
