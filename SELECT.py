@@ -21,7 +21,7 @@ print(select_request)
 # название и продолжительность самого длительного трека;
 
 select_request = connection.execute("""SELECT Название_трека, Длительность FROM Треки
-WHERE Длительность = (select max(Длительность) from Треки);
+WHERE Длительность = (select max(Длительность) FROM Треки);
 """).fetchall()
 
 print(select_request)
